@@ -101,7 +101,10 @@ transition:0.3s ease-in-out;
 }
 
 .number:hover {
-  color: #FFF
+  color: #FFF;
+  .vertical-line {
+    background-color: #fff;
+  }
 }
 
 
@@ -111,7 +114,9 @@ transition:0.3s ease-in-out;
   height: 34px; 
   background-color: rgba(255, 255, 255, 0.4); 
   margin-right: 25px; 
+  transition:0.3s ease-in-out;
 }
+
 
 
 
