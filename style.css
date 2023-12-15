@@ -192,16 +192,17 @@ margin-top: 20vh;
   align-items: center;
   flex-direction: column;
 }
-.slider{
+.slider-rooms{
     display: flex;
     justify-content: center;
     align-items: center; 
     width: 100%;
-    margin: 0 auto;
+    max-width: 100%;
+    overflow: hidden;
+    
   }
-  .slider img {
-    display: block; 
-    margin: 0 auto; 
+  .slider-rooms img {
+    margin: 10px;
   }
   .slider-btns {
     text-align: center;
