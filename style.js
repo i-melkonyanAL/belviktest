@@ -52,4 +52,28 @@ menuLinks.forEach(link => {
     }
 });
 
+let slideRoomsImg = ['1.png', '2.png', '3.png', '4.png', '5.png', '1.png', '2.png', '3.png', '4.png'];
+let currentIndex = 0;
+
+function updateBackgroundImages() {
+  for (let i = 0; i < 5; i++) {
+    const divIndex = i + 1;
+    const divClassName = `.sl-rooms-im${divIndex}`;
+    const imageIndex = (currentIndex + i) % slideRoomsImg.length;
+    const imageUrl = slideRoomsImg[imageIndex];
+    document.querySelector(divClassName).style.backgroundImage = `url(${imageUrl})`;
+  }
+}
+
+document.getElementById('prevButtonR').addEventListener('click', () => {
+  currentIndex = (currentIndex - 1 + slideRoomsImg.length) % slideRoomsImg.length;
+  updateBackgroundImages();
+});
+
+document.getElementById('nextButtonR').addEventListener('click', () => {
+  currentIndex = (currentIndex + 1) % slideRoomsImg.length;
+  updateBackgroundImages();
+});
+
+updateBackgroundImages();
 

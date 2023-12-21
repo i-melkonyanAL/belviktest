@@ -199,10 +199,37 @@ margin-top: 20vh;
     width: 100%;
     max-width: 100%;
     overflow: hidden;
+
     
   }
-  .slider-rooms img {
-    margin: 10px;
+  .sl-rooms-im1{
+    width: 500px;
+    height: 500px;
+    background-size: cover;
+  }
+  
+  .sl-rooms-im2{
+    width: 400px;
+    height: 400px;
+    background-size: cover;
+  }
+  
+  .sl-rooms-im3{
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+  }
+  
+  .sl-rooms-im4{
+    width: 400px;
+    height: 400px;
+    background-size: cover;
+  }
+  
+  .sl-rooms-im5{
+    width: 500px;
+    height: 500px;
+    background-size: cover;
   }
   .slider-btns {
     text-align: center;
