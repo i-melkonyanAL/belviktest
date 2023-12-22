@@ -77,3 +77,28 @@ document.getElementById('nextButtonR').addEventListener('click', () => {
 
 updateBackgroundImages();
 
+let slideCigarImg = ['1.png', '2.png', '3.png', '4.png', '5.png', '1.png', '2.png', '3.png', '4.png'];
+let currentIndexCigar = 0;
+
+function updateCigarBackgroundImages() {
+  for (let i = 0; i < 5; i++) {
+    const divIndexC = i + 1;
+    const divClassNameC = `.sl-cigar-im${divIndexC}`;
+     const imageIndexC = (currentIndex + i) % slideCigarImg.length;
+    const imageUrlC = slideCigarImg[imageIndexC];
+    document.querySelector(divClassNameC).style.backgroundImage = `url(${imageUrlC})`;
+  }
+}
+
+// document.getElementById('prevButtonR').addEventListener('click', () => {
+//   currentIndex = (currentIndex - 1 + slideRoomsImg.length) % slideRoomsImg.length;
+//   updateBackgroundImages();
+// });
+
+// document.getElementById('nextButtonR').addEventListener('click', () => {
+//   currentIndex = (currentIndex + 1) % slideRoomsImg.length;
+//   updateBackgroundImages();
+// });
+
+updateCigarBackgroundImages();
+

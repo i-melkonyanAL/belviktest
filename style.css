@@ -440,6 +440,27 @@ background-image: url(bg3.png);
     border: 1px solid black;
     width: 70%;
   }
+  .slider-cigar{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+
+    
+  }
+  .sl-cigar-im1{
+    width: 350px;
+    height: 450px;
+    background-size: cover;
+  }
+  
+  .sl-cigar-im2{
+    width: 450px;
+    height: 400px;
+    background-size: cover;
+  }
   .cigar-lounge-title{
     color: white;
     padding: 45px 40px;
